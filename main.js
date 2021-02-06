@@ -1,10 +1,4 @@
-menu_list_array = [
-    "Chicken Tandoori Pizza",
-    "Veg Supreme Pizza",
-    "Paneer Tikka Pizza",
-    "Deluxe Veggie Pizza",
-    "Veg Extravaganza Pizza",
-];
+menu_list_array = ["Chicken Tandoori Pizza", "Veg Supreme Pizza", "Paneer Tikka Pizza", "Deluxe Veggie Pizza", "Veg Extravaganza Pizza", "Classic Cheese Pizza"];
 
 function getmenu() {
     var htmldata;
@@ -25,8 +19,7 @@ function add_item() {
     htmldata = "<section class='cards'>"
     for (var i = 0; i < menu_list_array.length; i++) {
 
-        htmldata = htmldata + '<div class="card">' + '<img src="Pizza.png"/>' + menu_list_array[i] + '</div>'
-
+        htmldata = htmldata + '<div class="card">' + '<img src="images/pizzaImg.png">' + menu_list_array[i] + '</div>'
     }
     htmldata = htmldata + "</section>"
     document.getElementById("display_addedmenu").innerHTML = htmldata;
